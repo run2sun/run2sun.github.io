@@ -1,0 +1,32 @@
+[
+    {
+        "address": "111111@163.com",
+        "username": "111",
+        "password": "111111",
+        "newpassword": "111111"
+    },
+    {
+        "address": "222222@163.com",
+        "username": "222",
+        "password": "222222",
+        "newpassword": "222222"
+    },
+    {
+        "address": "333333@163.com",
+        "username": "333",
+        "password": "333333",
+        "newpassword": "333333"
+    },
+    {
+        "address": "444444@163.com",
+        "username": "444444",
+        "password": "444444",
+        "newpassword": "444444"
+    },
+    {
+        "address": "555555@163.com",
+        "username": "555555",
+        "password": "555555",
+        "newpassword": "555555"
+    }
+]

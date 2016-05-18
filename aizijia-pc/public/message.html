@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>自驾团定制页面</title>
+	<script src="js/jquery-1.11.1.js"></script>
+	<script language="javascript" type="text/javascript" src="My97DatePicker/WdatePicker.js"></script>
+	<link rel="stylesheet" href="style/cstyle.css">
+	<link rel="stylesheet" href="style/font-awesome.css">
+	<link rel="stylesheet" href="style/z-zjtdzym.css">
+	<style>
+		
+		* {
+			margin: 0;
+			padding: 0;
+			font-family: "微软雅黑";
+		}
+		.clearfix:before, .clearfix:after { 
+			content: " "; 
+			display: table; 
+		}
+		.clearfix:after {
+		    clear: both;
+		}
+		.clearfix {
+		    *zoom: 1;
+		}
+
+
+		/*start from here*/
+
+
+
+		#top {
+			background-color: #244d5f;
+		}
+		#top .box {
+			width: 1000px;
+			margin:0 auto;
+			padding-top: 12px;
+			font-size: 16px;
+			color:#fff;
+			cursor: pointer;
+		}
+		#top .box a {
+			text-decoration: none;
+			color:#fff;
+		}
+		#top .box a:hover {
+			color:#52bbdb;
+		}
+		#top .box .box1 {
+			display: inline-block;
+			padding-left: 22px;
+			float: left;
+			background: url(images/logo1.png) 0px 1px no-repeat;
+		}
+		#top .box a.box1:hover {
+			background: url(images/logo1_hover.png) 0px 1px no-repeat;
+			color:#52bbdb;
+		}
+
+		#top .box .change-city {
+			display: none;
+			font-size: 14px;
+			color: #333;
+			position: absolute;
+			top: 40px;
+			left: 14%;
+			z-index: 9999;
+			padding:5px 30px;
+			background-color: #fff;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-shadow: 0 0 5px #666666;
+		}
+		#top .box .change-city.add {
+			display: block;
+		}
+		#top .box .change-city table {
+			float: right;
+		}
+		#top .box .change-city td a {
+			color:#50b8d8;
+			display: block;
+			line-height: 24px;
+			width: 60px;
+			float: left;
+			text-align: center;
+		}
+		#top .box .change-city td a:hover {
+			background-color: rgba(80,184,216,.1);
+		}
+		#top .box .box2 {
+			display: inline-block;
+			float: left;
+			margin-left: 40px;
+			padding-left: 20px;
+			margin-bottom: 12px;
+			background: url(images/logo2.png) 0px 1px no-repeat;
+		}
+		#top .box .box2:hover {
+			background: url(images/logo2_hover.png) 0px 1px no-repeat;
+			color:#52bbdb;
+		}
+		#top .box .box3 {
+			float: right;
+			margin-right: 32px;
+		}
+		#top .box .box3 .fa-qq {
+			font-size: 22px;
+			margin-right: 8px;
+		}
+		#top .box .box3 .fa-weibo {
+			font-size: 24px;
+			margin-right: 20px;
+		}
+		#top .box .box3 .login {
+			float: right;
+		}	
+	</style>
+</head>
+<body>
+	<!-- 从这里复制 -->
+	<div id="top">
+		<div class="box">
+			<a class="box1">
+				<span>北京</span>&nbsp&nbsp切换
+			</a>
+			<div class="change-city">全国：
+				<table>
+					<tr>
+						<td><a>北京</a></td>
+						<td><a>天津</a></td>
+						<td><a>河北</a></td>
+						<td><a>山西</a></td>
+						<td><a>内蒙古</a></td>
+						<td><a>辽宁</a></td>
+						<td><a>吉林</a></td>
+						<td><a>黑龙江</a></td>
+						<td><a>上海</a></td>
+					</tr>
+					<tr>
+						<td><a>江苏</a></td>
+						<td><a>浙江</a></td>
+						<td><a>安徽</a></td>
+						<td><a>福建</a></td>
+						<td><a>江西</a></td>
+						<td><a>山东</a></td>
+						<td><a>河南</a></td>
+						<td><a>湖北</a></td>
+						<td><a>湖南</a></td>
+					</tr>
+					<tr>
+						<td><a>广东</a></td>
+						<td><a>广西</a></td>
+						<td><a>海南</a></td>
+						<td><a>重庆</a></td>
+						<td><a>四川</a></td>
+						<td><a>贵州</a></td>
+						<td><a>云南</a></td>
+						<td><a>西藏</a></td>
+						<td><a>陕西</a></td>
+					</tr>
+					<tr>
+						<td><a>甘肃</a></td>
+						<td><a>青海</a></td>
+						<td><a>宁夏</a></td>
+						<td><a>新疆</a></td>
+					</tr>
+				</table>
+			</div>
+			<a class="box2">下载手机APP</a>
+			<div class="box3">
+				<a href="#"><i class="fa fa-qq"></i></a>
+				<a href="#"><i class="fa fa-weibo"></i></a>
+				<div class="login">
+					<a href="#">登录</a>
+					&nbsp|&nbsp
+					<a href="#">注册</a>				
+				</div>
+
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<div id="box1">
+		<div id="banner1">
+			<img id="ban1-img" src="images/alogo3.jpg" alt="">
+			<ul id="ban1-ul">
+				<li class="ban1-li">首页</li>
+				<li class="ban1-li">目的地</li>
+				<li class="ban1-li">线路</li>
+				<li class="ban1-li">订制</li>
+				<li class="ban1-li">自驾团</li>
+				<li class="ban1-li">摄影</li>
+				<li class="ban1-li">互动</li>
+				<li class="ban1-li">精选</li>
+				<li class="ban1-li">预定</li>
+				<div class="clear"></div>
+			</ul>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="main-inner">
+			<div class="top">
+				<div class="top-zuoshang">
+					<a href="#"><img src="images/z-1.jpg" alt=""></a>
+					<h3>联系人信息<span>（必填）</span></h3>
+				</div>
+				<div class="top-youxia">
+					<div class="yx-top">
+						<h3>姓名</h3>
+						<input type="text" value="请输入姓名" class="zz-Chinese">
+					</div>
+					<div class="yx-mid">
+						<h3>手机号码</h3>
+						<input type="text" value="请输入手机号码" id="zz-tel">
+					</div>
+					<div class="yx-but">
+						<h3>邮箱</h3>
+						<input type="text" value="请输入邮箱" id="zz-yx">
+					</div>
+				</div>
+			</div>
+			<div class="mid">
+				<div class="mid-zuoshang">
+					<a href="#"><img src="images/z-尊尼.jpg" alt=""></a>
+					<h3>基本信息<span>（必填）</span></h3>
+				</div>
+				<div class="mid-youxia">
+					<div class="xingzhi">
+						<h3>出游性质</h3>
+						<ul class="xingzhi-list">
+							<a href="#" class="numm xingzhi-active"><li id="gongsi">公司</li></a>
+							<a href="#" class="numm"><li id="siren">私人</li></a>
+						</ul>
+					</div>
+					<div class="chufa">
+						<h3>出发地</h3>
+						<input type="text" value="上海" class="zz-Chinese">
+					</div>
+					<div class="mudi">
+						<h3>目的地</h3>
+						<input type="text" value="北京" class="zz-Chinese">
+					</div>
+					<div class="shijian">
+						<h3>出发日期</h3>
+						<input class="Wdate" type="text" onClick="WdatePicker()" value="最早" id="zuizao">
+						<h3 id="zhi">~</h3>
+						<input class="Wdate" type="text" onClick="WdatePicker()" value="最晚" id="zuiwan">
+					</div>
+					<div class="tsfather">
+						<div class="tianshu">
+							<h3>游玩天数</h3>
+							<input type="text" value="请输入" class="zz-num">
+						</div>
+						<h3 id="tian">天</h3>
+						<h3 id="zengjian">可适当增减天数</h3>
+					</div>
+					<div class="rsfather">
+						<div class="renshu">
+							<h3>出行人数</h3>
+							<input type="text" value=">3" id="zz-num3">
+						</div>
+						<div class="chengren">
+							<h3 id="chengren">成人</h3>
+							<input type="text" value="请输入儿童" class="zz-num">
+						</div>
+						<h3 id="ertong">儿童</h3>
+					</div>
+					<div class="yusuan">
+						<h3>人均预算</h3>
+						<input type="text" value="请填写人均预算" class="zz-num">
+					</div>
+				</div>
+			</div>
+			<div class="but">
+				<div class="but-zuoshang">
+					<a href="#"><img src="images/z-3.jpg" alt=""></a>
+					<h3>特色服务</h3>
+				</div>
+				<div class="but-youxia">
+					<div class="but-left">
+						<h3>旅行国界</h3>
+						<h3>行程安排</h3>
+						<h3>住宿安排</h3>
+						<h3>我的要求</h3>
+					</div>
+					<div class="but-right">
+						<div class="guo">
+							<a href="#" class="num a-active">不限</a>
+							<a href="#" class="num">境内</a>
+							<a href="#" class="num">境外</a>
+						</div>
+						<div class="xing">
+							<a href="#" class="num a-active">不限</a>
+							<a href="#" class="num">紧凑</a>
+							<a href="#" class="num">适中</a>
+							<a href="#" class="num">宽松</a>
+						</div>
+						<div class="zhu">
+							<a href="#" class="num a-active">不限</a>
+							<a href="#" class="num">三星/舒适</a>
+							<a href="#" class="num">四星/高档</a>
+							<a href="#" class="num">五星/豪华</a>
+							<a href="#" class="num">特色住宿</a>
+						</div>
+						<textarea name="" id="" cols="30" rows="10"></textarea>
+						<a href="#" id="tijiao">提交</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div id="footer1">
+			<div id="footer1-box">
+				<ul>
+					<li id="footer1-1">人民交通出版社 </li>
+					<li id="footer1-2">爱自驾</li>
+					<li id="footer1-3">联系我们</li>
+					<li id="footer1-4">友情链接</li>
+					<li id="footer1-5">爱自驾品牌店</li>
+				</ul>
+			</div>
+		</div>
+		<div id="footer2">
+			<div id="footer2-box"> 
+				<p id="footer-p1">人民交通出版社股份有限公司</p>
+				<p id="footer-p2">京ICP备15018898号-1</p>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(".num").click(function(){
+			$(this).addClass("a-active");
+			$(this).siblings().removeClass("a-active");
+			return false;
+		});
+		$(".numm").click(function(){
+			$(this).addClass("xingzhi-active");
+			$(this).siblings().removeClass("xingzhi-active");
+			return false;
+		});
+		$("a").click(function(){
+			return false;
+		});
+		var reg1= /^[\u4e00-\u9fa5]*$/g;
+		$(".zz-Chinese").click(function(){
+			$(this).val("");
+			$(this).mouseleave(function(){
+				var val=$(this).val();
+				var x=reg1.test(val);
+				if(x){console.log("正确")}else{
+					$(this).val("格式错误！");
+				}
+			});
+		});
+		var reg2= /^\d{11}$/;
+		$("#zz-tel").click(function(){
+			$(this).val("");
+			$(this).mouseleave(function(){
+				var val=$(this).val();
+				var x=reg2.test(val);
+				if(x){console.log("正确")}else{
+					$(this).val("格式错误！");
+				}
+			});
+		});
+		var reg3= /^[0-9]*$/g;
+		$(".zz-num").click(function(){
+			$(this).val("");
+			$(this).mouseleave(function(){
+				var val=$(this).val();
+				var x=reg3.test(val);
+				if(x){console.log("正确")}else{
+					$(this).val("格式错误！");
+				}
+			});
+		});
+		var reg4 = /^[a-zA-Z0-9]{5,10}\@163\.com$/
+		$("#zz-yx").click(function(){
+			$(this).val("");
+			$(this).mouseleave(function(){
+				var val=$(this).val();
+				var x=reg4.test(val);
+				if(x){console.log("正确")}else{
+					$(this).val("格式错误！");
+				}
+			});
+		});
+		var reg5 = /([3-9]\d+)|[4-9]/
+		$("#zz-num3").click(function(){
+			$(this).val("");
+			$(this).mouseleave(function(){
+				var val=$(this).val();
+				var x=reg5.test(val);
+				if(x){console.log("正确")}else{
+					$(this).val("格式错误！");
+				}
+			});
+		})
+		$(".box1").click(function(){
+			$(".box .change-city").toggleClass("add");
+		})
+		$(".box td").click(function(){
+			var val = $(this).text();
+			$(".box1 span").text(val);
+			$(".box .change-city.add").removeClass("add");
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style/bootstrap.css">
+	<link rel="stylesheet" href="style/index.css">
+	<link rel="stylesheet" href="style/lstyle.css">
+
+<link rel="stylesheet" href="style/bootstrapa.css">
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+    <link href="style/star-rating.css" media="all" rel="stylesheet" type="text/css"/>
+    <script src="js/star-rating.js" type="text/javascript"></script>
+<style>
+  .modal-content{width: 1000px;}
+  .atop{height: 100px;}
+  .atop1{float:left;width: 500px;text-align: center;line-height:100px;font-size:24px;font-family:"微软雅黑"}
+  .atop2{float:left;}
+  .atop2 img{padding-left:370px;padding-top:20px;cursor:pointer}
+  .acontainers{height: 400px;}
+  .acontainers1{width: 500px;height: 370px;border:1px solid #e8e8e8;margin-left:50px;float:left}
+  .acontainers11{width: 500px;height: 300px;border-bottom:1px solid #e8e8e8}
+  .acontainers12{width: 500px;height: 70px;}
+  .acontainers121{width: 85px;height:68px;background-color:#e4e4e4;text-align:center;line-height:70px;font-size:16px;font-family:"微软雅黑";float:left}
+  .acontainers122{width: 415px;height: 68px;float:left;font-size:16px;font-family:"微软雅黑";line-height:68px;cursor:pointer}
+  
+  .acontainers2{width: 350px;height: 370px;float:left}
+  .acontainers2 ul{list-style:none}
+  .acontainers2 ul li{height: 50px;}
+  .acontainers2 ul li span{line-height:50px}
+  .spanx{font-size:18px;font-family:"微软雅黑";}
+  .spany{font-size:16px;font-family:"微软雅黑";color:#b3b3b3}
+  .spany input{width: 20px;height: 20px;vertical-align:text-top;margin-top:0px}
+  .afooter{width: 100px;height: 40px;font-size:18px;font-family:"微软雅黑";color:#fff;background-color:#50bbdb;margin-left:430px;text-align:center;line-height:40px;cursor:pointer}
+  .abottom{height:100px;}
+  </style>
+
+
+
+</head>
+<body>
+	<div id="box">
+		<div id="top">
+			<div id="top1">
+				<img src="images/llogo1.jpg" alt="">
+				<p id="p1">北京</p>
+				<p id="p2">切换</p>
+			</div>
+			<div id="top2">
+				<img src="images/llogo2.jpg" alt="">
+				<p id="p3">下载手机APP</p>
+			</div>
+			<div id="top3">
+				<img src="images/l12.jpg" alt="">
+			</div>
+		</div>
+	</div>
+	<div id="box1">
+		<div id="banner1">
+			<img id="ban1-img" src="images/llogo3.jpg" alt="">
+			<ul id="ban1-ul">
+				<li class="ban1-li">首页</li>
+				<li class="ban1-li">目的地</li>
+				<li class="ban1-li">线路</li>
+				<li class="ban1-li">订制</li>
+				<li class="ban1-li">自驾团</li>
+				<li class="ban1-li">摄影</li>
+				<li class="ban1-li">互动</li>
+				<li class="ban1-li">精选</li>
+				<li class="ban1-li">预定</li>
+				<div class="clear"></div>
+			</ul>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div id="box2">
+		<div id="banner2">
+			<div id="ban2-1">
+				<img id="ban2-1-1" src="images/l1.jpg" alt="">
+				<div id="ban2-2-1">
+					<p>浮生若梦_JKAy</p>
+					<a href=""><img id="ban2-2-1-1"src="images/l10.jpg" alt=""></a>
+					<img id="ban2-2-1-2" src="images/l11.jpg" alt="">
+
+				</div>
+			</div>
+			<div id="ban2-2">
+				<img src="images/l2.jpg" alt="">
+				<p>扫一扫，关注我</p>
+			</div>
+			<div id="ban2-3">
+				<a href=""><img src="images/l3.jpg" alt=""></a>
+				<p>发布图片</p>
+			</div>
+			<div id="shuxian">
+				
+			</div>
+			<div id="ban2-4">
+				<a href=""><img src="images/l4.jpg" alt=""></a>
+				<p>管理互动</p>
+			</div>
+		</div>
+	</div>
+	
+	<div id="box3">
+		<div id="container">
+			<div id="con-1">
+				<p id="con-1-1"><strong>我的订单</strong></p>
+				<ul id="con-1-2">
+					<li>全部订单</li>
+					<li>待出行</li>
+					<li>待支付</li>
+					<li>待评价</li>
+					<li>已取消</li>
+				</ul>
+			</div>
+			<div id="con-2">
+				<div id="con-2-1">
+					<div id="con-2-1-1">
+						<p>按条件</p>
+						<img src="images/lsanjiao.jpg" alt="">
+						<ul id="con-2-1-1-1">
+							<li id="con-2-1-1-1-1" >订单编号</li>
+							<li id="con-2-1-1-1-2">订单金额</li>
+						</ul>
+					</div>
+					<!-- <div id="con-2-1-2">
+					</div> -->
+					<input id="con-2-1-2" type="text">
+					<div id="con-2-1-3">
+						<p>状态</p>
+						<img src="images/lsanjiao.jpg" alt="">
+						<ul id="con-2-1-3-1">
+							<li id="con-2-1-3-1-1" >待支付</li>
+							<li id="con-2-1-3-1-2" >已支付</li>
+							<li id="con-2-1-3-1-3" >已确定</li>
+							<li id="con-2-1-3-1-4" >待点评</li>
+							<li id="con-2-1-3-1-5" >已完成</li>
+							<li id="con-2-1-3-1-6" >已取消</li>
+						</ul>
+					</div>
+					<input id="con-2-1-3-7"type="text">
+					<input id="con-2-1-4" class="Wdate" type="text" onClick="WdatePicker()">
+					<!-- <a href=""><img id="con-2-1-4" src="image/rili.jpg" alt=""></a> -->
+					
+					<!-- <div id="con-2-1-6"> -->
+					<!-- <input id="con-2-1-6" type="text" > -->
+					<!-- </div> -->
+					<p id="con-2-1-5" >至</p>
+					<!-- <a href=""><img id="con-2-1-7" src="image/rili.jpg" alt=""></a>
+					<div id="con-2-1-8">
+						
+					</div>
+					<input id="con-2-1-8" type="text"> -->
+					<input id="con-2-1-6" class="Wdate" type="text" onClick="WdatePicker()">
+				</div>
+
+				<div id="con-2-2">
+					<p id="con-2-2-1">订单信息 </p>
+					<p id="con-2-2-2">订单信息</p>
+					<p id="con-2-2-3">出游日期</p>
+					<p id="con-2-2-4">订单金额</p>
+					<p id="con-2-2-5">订单状态</p>
+					<p id="con-2-2-6">操作</p>
+					<div class="clear"></div>
+				</div>
+				<div id="con-2-3">
+					<p id="con-2-3-1">订单编号：7195351 预订时间：2015-12-29 12:04:00</p>
+					<div id="con-2-3-2">
+						<img  id="con-2-3-2-1"src="images/l5.jpg" alt="">
+						<p id="con-2-3-2-2">[春节]<魅力湘西过大年>
+湘西年夜饭，北京直飞</p>
+<p id="con-2-3-2-3">自驾游</p>
+<p id="con-2-3-2-4">2016-02-07</p>
+<p id="con-2-3-2-5">￥4580</p>
+<p id="con-2-3-2-6">待出行</p>
+<div id="con-2-3-2-7">
+	<p>取消</p>
+	<img src="images/lsanjiao.jpg" alt="">
+	<ul id="list1">
+		<li id="list1-1">支付</li>
+		<li id="list1-2">取消</li>
+	</ul>
+</div>
+<div class="clear"></div>
+					</div>
+				</div>
+				<div id="con-2-4">
+					<p id="con-2-4-1">订单编号：7195351 预订时间：2015-12-25 12:04:00</p>
+					<div id="con-2-4-2">
+						<img  id="con-2-4-2-1"src="images/l6.jpg" alt="">
+						<p id="con-2-4-2-2">[5月]<阿尔山童话世界冰
+雪温泉之旅>北京直飞....</p>
+<p id="con-2-4-2-3">自驾游</p>
+<p id="con-2-4-2-4">2016-05-07</p>
+<p id="con-2-4-2-5">￥4580</p>
+<p id="con-2-4-2-6">待支付</p>
+<div id="con-2-4-2-7">
+	<p>支付</p>
+	<img src="images/lsanjiao.jpg" alt="">
+	<ul id="list2">
+		<li id="list2-1">支付</li>
+		<li id="list2-2">取消</li>
+	</ul>
+</div>
+<div class="clear"></div>
+					</div>
+				</div>
+				<div id="con-2-5">
+					<p id="con-2-5-1">订单编号：7195351 预订时间：2015-12-25 12:04:00</p>
+					<div id="con-2-5-2">
+						<img  id="con-2-5-2-1"src="images/l7.jpg" alt="">
+						<p id="con-2-5-2-2">[4月]<海南海岛环驾8日
+自驾之旅>海口直飞....</p>
+<p id="con-2-5-2-3">自驾游</p>
+<p id="con-2-5-2-4">2016-04-07</p>
+<p id="con-2-5-2-5">￥4580</p>
+<p id="con-2-5-2-6">待评价</p>
+<div class="con-2-5-2-7">
+	<div class=" btn-p" data-toggle="modal" data-target=".bs-example-modal-lg">评价</div>
+	<!-- <p class="bu1"></p> -->
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="atop">
+        <div class="atop1">行程点评</div>
+        <div class="atop2"><img class="aquxiao" src="images/aquxiao.gif" alt=""></div>
+       </div>
+       <div class="acontainers">
+         <div class="acontainers1">
+           <div class="acontainers11"></div>
+           <div class="acontainers12">
+             <div class="acontainers121">嗮图</div>
+             <div class="acontainers122">
+               <img src="images/atianjia.gif" alt="">
+               0/5
+             </div>
+           </div>
+         </div> 
+         <div class="acontainers2">
+           <ul>
+             <li><span class="spanx">行程安排:</span>
+              <span class="spany">
+              <input type="radio" name="an" value="1" checked>
+              满意
+              <input type="radio" name="an" >
+              不满意
+              <input type="radio" name="an" >
+              一般
+              </span>
+             </li>
+             <li><span class="spanx">住宿餐食:</span>
+                <span class="spany">
+              <input type="radio" name="an" value="1">
+              满意
+              <input type="radio" name="an" >
+              不满意
+              <input type="radio" name="an" >
+              一般
+              </span>
+             </li>
+             <li>
+              <span class="spanx">旅行交通:</span>
+                <span class="spany">
+              <input type="radio" name="an" value="1">
+              满意
+              <input type="radio" name="an" >
+              不满意
+              <input type="radio" name="an" >
+              一般
+              </span>
+             </li>
+             <li>
+              <span class="spanx">综合评价:</span>
+              <input id="input-21e" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+             </li>
+           </ul>
+         </div> 
+       </div>
+       <div class="afooter">提交评论</div>
+       <div class="abottom"></div>
+      </div>
+      
+    </div>
+  </div>
+
+	
+</div>
+<div class="clear"></div>
+					</div>
+				</div>
+				<div id="con-2-6">
+					<p id="con-2-6-1">订单编号：7195351 预订时间：2015-12-29 12:04:00</p>
+					<div id="con-2-6-2">
+						<img  id="con-2-6-2-1"src="images/l8.jpg" alt="">
+						<p id="con-2-6-2-2">[5月]<食在广东粤菜美
+食6日自驾>北京直飞....</p>
+<p id="con-2-6-2-3">自驾游</p>
+<p id="con-2-6-2-4">2016-05-07</p>
+<p id="con-2-6-2-5">￥4580</p>
+<p id="con-2-6-2-6">已取消</p>
+<div id="con-2-6-2-7">
+	<div class=" btn-primar" data-toggle="modal" data-target="#myModal"onmousemove="this.style.color='#fff'"; onmouseout="this.style.color='#fff'"
+><p class="bu"style="color:#000;">查看</p></div>
+
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<!-- <div class="modal-dialog" role="document"> -->
+			<!-- <div class="modal-content"> -->
+				<!-- <div class="modal-header"> -->
+					
+			<!-- 登录框 -->
+			<div id="order">
+		<div class="order-1">
+			<div class="order-1-l"><p>订单详情</p></div>
+			<div class="order-1-r" class="close" id="close" data-dismiss="modal" aria-label="Close">
+				<img src="images/cclose.gif" alt="" >
+				<p>关闭</p>
+			</div>
+		</div>
+		<div class="order-2">
+			<p>订单支付总额：</p>
+		</div>
+		<div class="order-list order-list-1">
+			<div class="order-t">
+				<p>线路信息</p>
+			</div>
+			<div class="order-b">
+				<p>自驾团名称：  云南落地自驾行摄之旅<br>
+				   出游日期：     2016-01-17 <br>
+				   成人：   1人                                 儿童：    0人 <br>
+				   房间：   2人间，愿意拼房
+				</p>
+			</div>
+		</div>
+		<div class="order-list">
+			<div class="order-t">
+				<p>联系人信息</p>
+			</div>
+			<div class="order-b order-b-4">
+				<p>姓名：       罗小小   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 性别：               女  <br>           
+				   手机号码： 18270837899 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 邮箱：2689326087@qq.com   
+				</p>
+			</div>
+		</div>
+		<div class="order-list">
+			<div class="order-t">
+				<p>游客信息</p>
+			</div>
+			<div class="order-b order-b-5 order-b-5-p1">
+				<p>
+					<span>游客1</span> <br>
+					游客类型:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  成人&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;姓名：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;罗小小  <br>
+					性别：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  女 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     手机号： &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  18270837899  <br>
+     				证件： &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;   护照 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  452726199102031552
+				</p>
+			</div>
+			<div class="order-b order-b-5">
+				<p>
+					<span>游客2</span>  <br>
+					游客类型: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    成人  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        姓名：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    罗笑笑   <br>
+					性别：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  女 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;   手机号： &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  18270837899  <br>
+     				证件： &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;   护照 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  452726199102031552
+				</p>
+			</div>
+		</div>
+		<div class="order-list">
+			<div class="order-t">
+				<p>保险</p>
+			</div>
+			<div class="order-b order-b-6-p1">
+				<p>
+					平安爱自驾境外长线保险           经典型2份&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<span style="color:#eb5e17"> ￥177</span>/一份
+				</p>
+			</div>
+			<div class="order-b order-b-6">
+				<p>
+					平安爱自驾境外长线保险           经典型2份 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <span style="color:#eb5e17"> ￥177</span>/一份
+				</p>
+			</div>
+		</div>
+		<div class="order-list">
+			<div class="order-t">
+				<p>预定信息</p>
+			</div>
+			<div class="order-b order-b-7">
+				<p>
+					发票信息：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 是否需要发票：是 <br>
+					发票抬头：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 无  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       发票明细：    会议费  <br>
+					配送地址：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  北京市朝阳区北辰东路八号汇园国际k座
+				</p>
+			</div>
+		</div>
+		<div class="order-list">
+			<div class="order-t">
+				<p>更多要求</p>
+			</div>
+			<div class="order-b">
+				<p>
+					温馨的住宿和美味的餐食
+				</p>
+			</div>
+		</div>
+		<div class="order-9">
+			
+			<a href="#order"><img src="images/ctop.gif" alt=""></a>
+			
+		</div>
+		<div class="clear"></div>
+	</div>			
+		<!-- </div> -->
+	</div>
+
+<div class="clear"></div>
+
+</div>
+
+				
+			</div>
+<div id="con-2-7">
+					<a href="#"><p>加载更多</p></a>
+				</div>
+			<div id="con-3">
+				<p id="con-3-1"><strong>我的收藏</strong></p>
+				<ul id="con-3-2">
+					<li>看点</li>
+					<li>停车发呆地</li>
+					<li>高德地图点</li>
+					<li>私享点</li>
+					<li>线路</li>
+					<li>自驾团</li>
+				</ul>
+			</div>
+			<div id="con-4">
+				<div id="con-4-1">
+					<p id="con-4-1-1"><strong>暂无收藏看点</strong></p>
+				</div>
+				<div id="con-4-2">
+					<p id="con-4-2-1">暂无线路数据</p>
+					<p id="con-4-2-2"><strong>我的车队</strong></p>
+				</div>
+				<div id="con-4-3">
+					<div id="con-4-3-1">
+						<a href=""><p>+ 新建车队</p></a>
+					</div>
+					<p id="con-4-3-2"><strong>我的照片</strong></p>
+					<p id="con-4-3-3">照片</p>
+				</div>
+				<div id="con-4-4">
+					<a href=""><div id="con-4-4-1">
+						<p>+ 上照片</p>
+					</div></a>
+					<a href=""><div id="con-4-4-2">
+						<p>创建相册</p>
+					</div></a>
+				</div>
+				<div id="con-4-5">
+					<img src="images/l9.jpg" alt="">
+					<p>分享专属</p>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div id="footer1">
+			<div id="footer1-box">
+				<ul>
+					<li id="footer1-1">人民交通出版社 </li>
+					<li id="footer1-2">爱自驾</li>
+					<li id="footer1-3">联系我们</li>
+					<li id="footer1-4">友情链接</li>
+					<li id="footer1-5">爱自驾品牌店</li>
+				</ul>
+			</div>
+		</div>
+		<div id="footer2">
+			<div id="footer2-box"> 
+				<p id="footer-p1">人民交通出版社股份有限公司</p>
+				<p id="footer-p2">京ICP备15018898号-1</p>
+			</div>
+		</div>
+	</div>
+	<script language="javascript" type="text/javascript" src="My97DatePicker/WdatePicker.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script type="text/javascript">
+		$(".btn-primary btn-lg").click(function(){ 
+	   		$('#myModal').modal('hide')
+	   		
+		});
+		$(".btn-lg").click(function(){
+    		$(".modal").modal("hide")
+  		});
+
+		$(".aquxiao").click(function(){
+    		$(".modal").modal("hide")
+  		});
+		$("#con-2-1-1").click(function(){
+			$("#con-2-1-1-1").slideDown(500)
+		});
+		$("#con-2-1-1").mouseleave(function(){
+			$("#con-2-1-1-1").slideUp(500)
+		})
+
+
+		$("#con-2-1-1-1-1").mouseenter(function(){
+			$("#con-2-1-1-1-1").css("background-color","#50bbdb")
+		})
+		$("#con-2-1-1-1-1").mouseenter(function(){
+			$("#con-2-1-1-1").slideUp(500)
+		})
+		$("#con-2-1-1-1-1").click(function(){
+			var text=$("#con-2-1-1-1-1").text();
+			console.log(text);
+			$("#con-2-1-2").val(text);
+
+		})
+		$("#con-2-1-1-1-1").mouseleave(function(){
+			$("#con-2-1-1-1-1").css("background-color","#fff")
+		})
+		$("#con-2-1-1-1-2").mouseenter(function(){
+			$("#con-2-1-1-1-2").css("background-color","#50bbdb")
+		})
+		$("#con-2-1-1-1-2").click(function(){
+			var text1=$("#con-2-1-1-1-2").text();
+			console.log(text1);
+			$("#con-2-1-2").val(text1);
+
+		})
+		$("#con-2-1-1-1-2").mouseleave(function(){
+			$("#con-2-1-1-1-2").css("background-color","#fff")
+		})
+		
+		$("#con-2-1-3").click(function(){
+			$("#con-2-1-3-1").slideDown(500)
+		});
+		$("#con-2-1-3").mouseleave(function(){
+			$("#con-2-1-3-1").slideUp(500)
+		});
+
+		$("#con-2-1-3-1-1").mouseenter(function(){
+			$("#con-2-1-3-1-1").css("background-color","#50bbdb")
+		});
+		$("#con-2-1-3-1-1").click(function(){
+			var text=$("#con-2-1-3-1-1").text();
+			console.log(text);
+			$("#con-2-1-3-7").val(text);
+
+		})
+		// $("#con-2-1-3-1-1").click(function(){
+		// 	$("#con-2-1-3-1").css("display","none")
+		// })
+		$("#con-2-1-3-1-1").mouseleave(function(){
+			$("#con-2-1-3-1-1").css("background-color","#fff")
+		})
+
+		$("#con-2-1-3-1-2").mouseenter(function(){
+			$("#con-2-1-3-1-2").css("background-color","#50bbdb")
+		})
+		$("#con-2-1-3-1-2").click(function(){
+			var text=$("#con-2-1-3-1-2").text();
+			console.log(text);
+			$("#con-2-1-3-7").val(text);
+
+
+		})
+		$("#con-2-1-3-1-2").mouseleave(function(){
+			$("#con-2-1-3-1-2").css("background-color","#fff")
+		})
+		$("#con-2-1-3-1-3").mouseenter(function(){
+			$("#con-2-1-3-1-3").css("background-color","#50bbdb")
+		})
+		$("#con-2-1-3-1-3").click(function(){
+			var text=$("#con-2-1-3-1-3").text();
+			console.log(text);
+			$("#con-2-1-3-7").val(text);
+
+		})
+		$("#con-2-1-3-1-3").mouseleave(function(){
+			$("#con-2-1-3-1-3").css("background-color","#fff")
+		})
+
+		$("#con-2-1-3-1-4").mouseenter(function(){
+			$("#con-2-1-3-1-4").css("background-color","#50bbdb")
+		})
+		$("#con-2-1-3-1-4").click(function(){
+			var text=$("#con-2-1-3-1-4").text();
+			console.log(text);
+			$("#con-2-1-3-7").val(text);
+
+
+		})
+		$("#con-2-1-3-1-4").mouseleave(function(){
+			$("#con-2-1-3-1-4").css("background-color","#fff")
+		})
+		$("#con-2-1-3-1-5").mouseenter(function(){
+			$("#con-2-1-3-1-5").css("background-color","#50bbdb")
+		})
+		$("#con-2-1-3-1-5").click(function(){
+			var text=$("#con-2-1-3-1-5").text();
+			console.log(text);
+			$("#con-2-1-3-7").val(text);
+
+
+		})
+		$("#con-2-1-3-1-5").mouseleave(function(){
+			$("#con-2-1-3-1-5").css("background-color","#fff")
+		})
+
+		$("#con-2-1-3-1-6").mouseenter(function(){
+			$("#con-2-1-3-1-6").css("background-color","#50bbdb")
+		})
+		$("#con-2-1-3-1-6").click(function(){
+			var text=$("#con-2-1-3-1-6").text();
+			console.log(text);
+			$("#con-2-1-3-7").val(text);
+
+		})
+		$("#con-2-1-3-1-6").mouseleave(function(){
+			$("#con-2-1-3-1-6").css("background-color","#fff")
+
+		})
+
+
+
+
+		$("#con-2-3-2-7").click(function(){
+			$("#list1").slideDown(500)
+		})
+		$("#con-2-3-2-7").mouseleave(function(){
+			$("#list1").slideUp(500)
+		})
+
+		$("#list1-1").mouseenter(function(){
+			$("#list1-1").css("background-color","#50bbdb")
+		})
+		$("#list1-1").mouseenter(function(){
+			$("#list1").stop().slideDown(500)
+		});
+		$("#list1-2").mouseenter(function(){
+			$("#list1").stop().slideDown(500)
+		})
+
+		$("#list1-1").click(function(){
+			var text=$("#list1-1").text();
+			$("#con-2-3-2-7 p").text(text);
+
+		})
+		$("#list1-1").mouseleave(function(){
+			$("#list1-1").css("background-color","#fff")
+		})
+		$("#list1-2").mouseenter(function(){
+			$("#list1-2").css("background-color","#50bbdb")
+		})
+		$("#list1-2").click(function(){
+			var text=$("#list1-2").text();
+			$("#con-2-3-2-7 p").text(text);
+		})
+		$("#list1-2").click(function(){
+			$("#list1").css("display","none")
+		})
+		$("#list1-1").click(function(){
+			$("#list1").css("display","none")
+		})
+		$("#list1-2").mouseleave(function(){
+			$("#list1-2").css("background-color","#fff")
+		})
+
+
+
+
+		$("#con-2-4-2-7").click(function(){
+			$("#list2").stop().slideDown(500)
+		})
+
+		$("#con-2-4-2-7").mouseleave(function(){
+			$("#list2").stop().slideUp(500)
+		})
+
+		$("#list2-1").mouseenter(function(){
+			$("#list2").stop().slideDown(500)
+		})
+		$("#list2-1").mouseenter(function(){
+			$("#list2-1").css("background-color","#50bbdb")
+		})
+
+		$("#list2-1").click(function(){
+			var text=$("#list2-1").text();
+			$("#con-2-4-2-7 p").text(text);
+		})
+		$("#list2-1").click(function(){
+			$("#list2").css("display","none")
+		})
+		$("#list2-2").click(function(){
+			$("#list2").css("display","none")
+		})
+		$("#list2-1").mouseleave(function(){
+			$("#list2-1").css("background-color","#fff")
+		})
+
+		$("#list2-2").mouseenter(function(){
+			$("#list2").stop().slideDown(500)
+		})
+		$("#list2-2").mouseenter(function(){
+			$("#list2-2").css("background-color","#50bbdb")
+		})
+		$("#list2-2").click(function(){
+			var text=$("#list2-2").text();
+			$("#con-2-4-2-7 p").text(text);
+
+		})
+		$("#list2-2").mouseleave(function(){
+			$("#list2-2").css("background-color","#fff")
+		})
+		$
+	</script>
+</body>
+</html>
