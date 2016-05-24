@@ -2,10 +2,51 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/index.css">
 	<title>Document</title>
 </head>
 <body>
-	<a href="http://run2sun.cn/">简历</a>
-	<a href="#">小东西</a>
+	<div class='stars'></div>
+	<div class='stars2'></div>
+	<div class="nav">
+		<ul>
+			<li><a href="index.html"><img src="images/nav-home.png"></a></li>
+			<li><a href="#"><img src="images/nav-url.png"></a></li>
+			<li><a href="#"><img src="images/nav-stars.png"></a></li>
+			<li><a href="#"><img src="images/nav-paint.png"></a></li>
+		</ul>
+	</div>
+	<img class="nav-btn" src="images/nav-icon.png">
+	<div class="container">
+		<h1>run2sun.cn</h1>
+		<h2>Sunn's Personal Website</h2>
+		<p>My Resume：<img src="" alt=""><img src="" alt=""></p>
+	</div>
+	<script src="js/jquery-1.11.1.js"></script>
+	<script>
+	$('.nav-btn').click(function(){
+		$('.nav').addClass('trans');
+		$('.nav-btn').animate({
+			opacity:0
+		},400);
+	});
+	$('.nav').mouseleave(function(){
+		$(this).removeClass('trans');
+		$('.nav-btn').animate({
+			opacity:.6
+		},800);
+	})
+	$(document).ready(function(){
+		$('.container h1').delay(500).animate({
+			opacity: 1,
+			top: 0
+		},700);
+		$('.container h2').delay(1200).animate({
+			opacity: 1,
+			top: 150
+		},700);
+	})
+	</script>
 </body>
 </html>
