@@ -1,6 +1,6 @@
 @font-face {
   font-family: Jura;
-  src:url(../fonts/Jura-Light.ttf);
+  src:url("../fonts/Jura-Light.ttf");
   font-weight: lighter;
 }
 @font-face {

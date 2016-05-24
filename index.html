@@ -5,8 +5,19 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/index.css">
 	<title>Document</title>
+	<script>
+		function initPage(){
+		    var objLoading = document.getElementById("LoadingBar");
+		    if (objLoading != null)
+		    {
+		        objLoading.style.display = "none";
+		    }
+		}
+		window.onload = initPage();
+	</script>
 </head>
 <body>
+	<div style="color:#fff" id="LoadingBar">加载...</div>
 	<div class='stars'></div>
 	<div class='stars2'></div>
 	<div class="nav">
@@ -25,28 +36,29 @@
 	</div>
 	<script src="js/jquery-1.11.1.js"></script>
 	<script>
-	$('.nav-btn').click(function(){
-		$('.nav').addClass('trans');
-		$('.nav-btn').animate({
-			opacity:0
-		},400);
-	});
-	$('.nav').mouseleave(function(){
-		$(this).removeClass('trans');
-		$('.nav-btn').animate({
-			opacity:.6
-		},800);
-	})
-	$(document).ready(function(){
-		$('.container h1').delay(500).animate({
-			opacity: 1,
-			top: 0
-		},700);
-		$('.container h2').delay(1200).animate({
-			opacity: 1,
-			top: 150
-		},700);
-	})
+		$('.nav-btn').click(function(){
+			$('.nav').addClass('trans');
+			$('.nav-btn').animate({
+				opacity:0
+			},400);
+		});
+		$('.nav').mouseleave(function(){
+			$(this).removeClass('trans');
+			$('.nav-btn').animate({
+				opacity:.6
+			},800);
+		})
+		$(document).ready(function(){
+			$('.container h1').delay(500).animate({
+				opacity: 1,
+				top: 0
+			},700);
+			$('.container h2').delay(1200).animate({
+				opacity: 1,
+				top: 150
+			},700);
+		})
+
 	</script>
 </body>
 </html>
