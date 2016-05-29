@@ -1,15 +1,20 @@
+.cf:before, .cf:after { 
+  content: " "; 
+  display: table; 
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
 @font-face {
   font-family: Jura;
   src:url("../fonts/Jura-Light.ttf");
   font-weight: lighter;
 }
-@font-face {
-  font-family: YueHei;
-  src:url("../fonts/YueHei.otf");
-  font-weight: lighter;
-}
 h1,h2,h3,h4,h5,h6,p,a,span,ul li,i,b {
-  font-family: Jura,YueHei;
+  font-family: Jura,Microsoft YaHei;
   font-weight: lighter;
   color: #ddd;
 }
@@ -106,22 +111,57 @@ html,body {
 .nav ul li:last-child {
   border-bottom: none;
 }
-.container {
+.content {
   position: relative;
 }
-.container h1 {
+#loading {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  left: 42vw;
+  top: 120px;
+  font-size: 48px;
+  font-family: MicroSoft YaHei;
+  font-weight: lighter;
+  color: #ddd;
+  text-align: center;
+  line-height: 100px;
+}
+.content h1 {
   position: absolute;
   left: 28vw;
   top: 50px;
   font-size: 120px;
   opacity: 0;
 }
-.container h2 {
+.content h2 {
   position: absolute;
   left: 36vw;
-  top: 160px;
+  top: 200px;
   font-size: 36px;
   opacity: 0;
-  top: 200px;
 }
-
+.content p {
+  position: absolute;
+  left: 40vw;
+  top: 400px;
+  font-size: 20px;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content p a {
+  width: 100px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid rgba(255, 255, 255, .3);
+}
+.content p a:hover {
+  background: radial-gradient(ellipse at center, rgba(255,255,255,.1) 0%, rgba(255,255,255,0) 100%);
+}
+.content p a:last-child {
+  border-right: none;
+}

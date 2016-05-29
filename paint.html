@@ -18,32 +18,9 @@
 		</ul>
 	</div>
 	<img class="nav-btn" src="images/nav-icon.png">
-	<div class="content">
-		<div id="loading">Loading...</div>
-		<h1>run2sun.cn</h1>
-		<h2>Sunn's Personal Website</h2>
-		<p>RESUME：
-			<a href="http://run2sun.cn/resume"><img src="images/resume-pc.png" style="width: 36px;height: 36px;"></a>
-			<a href=""><img src="images/resume-mobile.png" style="width: 28px;height: 28px;"></a>
-		</p>
-	</div>
+	
 	<script src="js/jquery-1.11.1.js"></script>
-	<script src="js/jquery-easing.js"></script>
 	<script>
-		$(document).ready(function(){
-			$('#loading').delay(1000).fadeOut(500);
-			$('.content h1').delay(2000).animate({
-				opacity: 1,
-				top: 0
-			},1000,'easeInOutCubic');
-			$('.content h2').delay(2500).animate({
-				opacity: 1,
-				top: 150
-			},1000,'easeInOutCubic');
-			$('.content p').delay(5000).animate({
-				opacity: 1
-			},1000);
-		})
 		$('.nav-btn').click(function(){
 			$('.nav').addClass('trans');
 			$('.nav-btn').animate({
