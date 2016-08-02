@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style/z-zjttxddy.css">
+	<script src="js/jquery-1.11.1.js"></script>
+	<link rel="stylesheet" href="style/font-awesome.css">
+	<link rel="stylesheet" href="style/cstyle.css">
+	<style>
+		
+		* {
+			margin: 0;
+			padding: 0;
+			font-family: "微软雅黑";
+		}
+		.clearfix:before, .clearfix:after { 
+			content: " "; 
+			display: table; 
+		}
+		.clearfix:after {
+		    clear: both;
+		}
+		.clearfix {
+		    *zoom: 1;
+		}
+
+
+		/*start from here*/
+
+
+
+		#top {
+			background-color: #244d5f;
+		}
+		#top .box {
+			width: 1000px;
+			margin:0 auto;
+			padding-top: 12px;
+			font-size: 16px;
+			color:#fff;
+			cursor: pointer;
+		}
+		#top .box a {
+			text-decoration: none;
+			color:#fff;
+		}
+		#top .box a:hover {
+			color:#52bbdb;
+		}
+		#top .box .box1 {
+			display: inline-block;
+			padding-left: 22px;
+			float: left;
+			background: url(images/logo1.png) 0px 1px no-repeat;
+		}
+		#top .box a.box1:hover {
+			background: url(images/logo1_hover.png) 0px 1px no-repeat;
+			color:#52bbdb;
+		}
+
+		#top .box .change-city {
+			display: none;
+			font-size: 14px;
+			color: #333;
+			position: absolute;
+			top: 40px;
+			left: 14%;
+			z-index: 9999;
+			padding:5px 30px;
+			background-color: #fff;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-shadow: 0 0 5px #666666;
+		}
+		#top .box .change-city.add {
+			display: block;
+		}
+		#top .box .change-city table {
+			float: right;
+		}
+		#top .box .change-city td a {
+			color:#50b8d8;
+			display: block;
+			line-height: 24px;
+			width: 60px;
+			float: left;
+			text-align: center;
+		}
+		#top .box .change-city td a:hover {
+			background-color: rgba(80,184,216,.1);
+		}
+		#top .box .box2 {
+			display: inline-block;
+			float: left;
+			margin-left: 40px;
+			padding-left: 20px;
+			margin-bottom: 12px;
+			background: url(images/logo2.png) 0px 1px no-repeat;
+		}
+		#top .box .box2:hover {
+			background: url(images/logo2_hover.png) 0px 1px no-repeat;
+			color:#52bbdb;
+		}
+		#top .box .box3 {
+			float: right;
+			margin-right: 32px;
+		}
+		#top .box .box3 .fa-qq {
+			font-size: 22px;
+			margin-right: 8px;
+		}
+		#top .box .box3 .fa-weibo {
+			font-size: 24px;
+			margin-right: 20px;
+		}
+		#top .box .box3 .login {
+			float: right;
+		}	
+	</style>
+	
+</head>
+<body>
+	<div id="top">
+		<div class="box">
+			<a class="box1">
+				<span>北京</span>&nbsp&nbsp切换
+			</a>
+			<div class="change-city">全国：
+				<table>
+					<tr>
+						<td><a>北京</a></td>
+						<td><a>天津</a></td>
+						<td><a>河北</a></td>
+						<td><a>山西</a></td>
+						<td><a>内蒙古</a></td>
+						<td><a>辽宁</a></td>
+						<td><a>吉林</a></td>
+						<td><a>黑龙江</a></td>
+						<td><a>上海</a></td>
+					</tr>
+					<tr>
+						<td><a>江苏</a></td>
+						<td><a>浙江</a></td>
+						<td><a>安徽</a></td>
+						<td><a>福建</a></td>
+						<td><a>江西</a></td>
+						<td><a>山东</a></td>
+						<td><a>河南</a></td>
+						<td><a>湖北</a></td>
+						<td><a>湖南</a></td>
+					</tr>
+					<tr>
+						<td><a>广东</a></td>
+						<td><a>广西</a></td>
+						<td><a>海南</a></td>
+						<td><a>重庆</a></td>
+						<td><a>四川</a></td>
+						<td><a>贵州</a></td>
+						<td><a>云南</a></td>
+						<td><a>西藏</a></td>
+						<td><a>陕西</a></td>
+					</tr>
+					<tr>
+						<td><a>甘肃</a></td>
+						<td><a>青海</a></td>
+						<td><a>宁夏</a></td>
+						<td><a>新疆</a></td>
+					</tr>
+				</table>
+			</div>
+			<a class="box2">下载手机APP</a>
+			<div class="box3">
+				<a href="#"><i class="fa fa-qq"></i></a>
+				<a href="#"><i class="fa fa-weibo"></i></a>
+				<div class="login">
+					<a href="#">登录</a>
+					&nbsp|&nbsp
+					<a href="#">注册</a>				
+				</div>
+
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<div id="box1">
+		<div id="banner1">
+			<img id="ban1-img" src="images/alogo3.jpg" alt="">
+			<ul id="ban1-ul">
+				<li class="ban1-li">首页</li>
+				<li class="ban1-li">目的地</li>
+				<li class="ban1-li">线路</li>
+				<li class="ban1-li">订制</li>
+				<li class="ban1-li">自驾团</li>
+				<li class="ban1-li">摄影</li>
+				<li class="ban1-li">互动</li>
+				<li class="ban1-li">精选</li>
+				<li class="ban1-li">预定</li>
+				<div class="clear"></div>
+			</ul>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="img">
+		<img src="images/z-16.jpg" alt="">
+	</div>
+	<div class="main">
+		<div class="main-inner">
+			<div class="position">
+				<div class="p-dingdan">
+					订单信息
+				</div>
+				<div class="p-fangjian">
+					<div class="pfj-chengren">成人&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 X ￥5280</div>
+					<div class="pfj-fangjian">房间 x 
+						<div class="pfj-num">1</div>
+					</div>
+				</div>
+				<div class="p-yiwai">
+					意外旅游险&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 x ￥120
+				</div>
+				<div class="p-youhui">
+					优惠金额<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-￥0</span>
+				</div>
+				<div class="p-zongji">
+					总计
+					<div class="pzj-num">
+						<span id="span-pz-left">￥</span>
+						<span id="span-pz-right">5400</span>
+					</div>
+				</div>
+			</div>
+			<div class="xianlu">
+				<div class="xianlu-left">
+					<div class="xll-top">
+						线路信息
+						<a href="#">修改</a>
+					</div>
+					<div class="xll-mid">
+						<div class="mingcheng">
+							<h3 class="h3-left">线路名称：</h3>
+							<h3 class="h3-right">[北京出发] <span>经奢自驾八人小团：云南落地自驾行摄7日之旅</span></h3>
+						</div>
+						<div class="riqi">
+							<h3 class="h3-left">出游日期：</h3>
+							<h3 class="h3-right">2016-01-17</h3>
+						</div>
+						<div class="chengren">
+							<h3 class="h3-left">成人：</h3>
+							<h3 class="h3-right">1 x ￥5280</h3>
+						</div>
+						<div class="ertong">
+							<h3 class="h3-left">儿童：</h3>
+							<h3 class="h3-right">0 x ￥5280</h3>
+						</div>
+						<div class="fangjian">
+							<h3 class="h3-left" id="h3-fj">房间：</h3>
+							<div class="fj-right">
+								<div class="jiajian">
+									<input type="button" id="jia">
+									<input type="text" value="1" id="num">
+									<input type="button" id="jian">
+								</div>
+								<h3 class="errenjian">（2人间）</h3>
+							</div>
+						</div>
+					</div>
+					<div class="xll-but">
+						<div class="xllb-top">
+							<div class="xllbt-left">
+								是否同意拼房<span>*</span>：
+							</div>
+							<div class="xllbt-right">
+								<input type="radio" name="1" value="2" checked>
+								同意拼房
+							</div>
+						</div>
+						<div class="xllb-but">
+							<input type="radio" name="1">
+							不同意拼房,愿意支付房差费用￥3500
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="feiyong">
+				<div class="fy-top">
+					<a href="#">费用说明</a>
+					<span><a href="#">退改规则</a></span>
+				</div>
+				<div class="fy-but">
+					<h3>费用包含：</h3>
+					<ul>
+						<li>*+7x24小时优秀中/英双语自驾向导服务（国内出发，全程陪同）；</li>
+						<li>*+国内往返美国经济舱机票、燃油附加税、机票税；</li>
+						<li>*+包含好莱坞环球影城+17英里海岸门票；</li>
+						<li>*+美国当地钻酒店住宿；</li>
+					</ul>
+					<a href="#">阅读全部</a>
+				</div>
+			</div>
+			<div class="lianxiren">
+				<div class="lxr-top">
+					联系人信息
+				</div>
+				<div class="lxr-but">
+					<div class="lxrb-left">
+						<label for="">姓名<span>*</span></label>
+						<label for="">性别</label>
+						<label for="">手机号码<span>*</span></label>
+						<label for="">邮箱<span>*</span></label>
+					</div>
+					<div class="lxrb-right">
+						<input type="text" value="请输入姓名" class="tx-chinese">
+						<div class="lxrb-xb">
+							<div id="lxrb-nan">
+								<input type="radio" name="yd" value="1" checked>男
+							</div>
+							<div id="lxrb-nv">
+								<input type="radio" name="yd">女
+							</div>
+						</div>
+						<input type="text" value="请输入手机号码" class="tx-tel">
+						<input type="text" value="请输入邮箱" class="tx-yx">
+					</div>
+				</div>
+			</div>
+			<div class="youke">
+				<div class="yk-top">
+					游客信息
+					<a href="#" id="a-ykt">常用游客</a>
+				</div>
+				<div class="yk-mid">
+					<h3>游客1</h3>
+					<div class="ykm">
+						<div class="ykm-left">
+							<label for="">游客类型</label>
+							<label for="">姓名<span>*</span></label>
+							<label for="">性别</label>
+							<label for="">手机号码</label>
+							<label for="">证件<span>*</span></label>
+						</div>
+						<div class="ykm-right">
+							<div class="ykmr">
+								<div class="ykmr-left">
+									<input type="radio" name="ykm" value="1" checked> 成人
+								</div>
+								<div class="ykmr-right">
+									<input type="radio" name="ykm"> 儿童
+								</div>
+							</div>
+							<div class="ykmr">
+								<select name="" id="yuyan"> 
+									<option value="0">中文</option> 
+									<option value="1">英文</option> 
+								</select>
+								<input type="text" value="请输入姓名" id="xx" class="tx-chinese"> 
+							</div>
+							<div class="ykmr">
+								<div class="ykmr-left">
+									<input type="radio" name="ykmr" value="1" checked> 男
+								</div>
+								<div class="ykmr-right">
+									<input type="radio" name="ykmr"> 女
+								</div>
+							</div>
+							<div class="ykmr">
+								<input type="text" id="input-ykmr" value="请输入手机号码" class="tx-tel">
+							</div>
+							<div class="ykmr">
+								<select name="" id="zhengjian"> 
+									<option value="0">护照</option> 
+									<option value="1">军证</option> 
+								</select>
+								<input type="text" value="请输入姓名" id="yy" class="tx-chinese">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="yk-but">
+					<a href="#" id="a-ykb">+ 添加游客</a>
+				</div>
+			</div>
+			<div class="baoxian">
+				<div class="bx-top">
+					保险信息
+					<a href="#">详情></a>
+				</div>
+				<div class="bx-mid">
+					<input type="checkbox" name="bx" value="1">
+					<ul>
+						<li class="li-bxd-left">平安爱自驾境外长线保险</li>
+						<li class="li-bxd-mid">经典型2份</li>
+						<li class="li-bxd-right"><span>￥177</span>/一份</li>
+					</ul>
+				</div>
+				<div class="bx-but">
+					<input type="checkbox" name="bx">
+					<ul>
+						<li class="li-bxd-left">平安爱自驾境外长线保险</li>
+						<li class="li-bxd-mid">经典型2份</li>
+						<li class="li-bxd-right"><span>￥177</span>/一份</li>
+					</ul>
+				</div>
+			</div>
+			<div class="yuding">
+				<div class="yd-top">
+					预订信息
+				</div>
+				<div class="yd-mid">
+					<div class="ydm-left">
+						<label for="">发票信息：</label>
+						<label for="">发票抬头：</label>
+						<label for="">发票明细：</label>
+						<label for="">配送地址：</label>
+					</div>
+					<div class="ydm-right">
+						<div class="ydmr-xx">
+							<div class="ydmr-shifou">是否需要发票：</div>
+							<div id="ydmr-shi">
+								<input type="radio" name="ydmr" value="1" checked="checked" class="tx-yes">是
+							</div>
+							<div id="ydmr-fou">
+								<input type="radio" name="ydmr" class="tx-no">否
+							</div>
+						</div>
+						<input type="text" id="input-tt" value="请输入发票抬头" class="tx-chinese"><br>
+						<input type="text" id="input-hy" value="会议费" class="tx-num"><br>
+						<input type="text" id="input-dz" value="请输入配送地址" class="tx-chinese">
+					</div>
+				</div>
+			</div>
+			<a href="#" id="a-yq">更多要求>></a>
+			<div class="tijiao">
+				<div class="tj-zongjia">
+					<div class="tj-num">1</div>
+					<div class="tj-result">5570</div>
+				</div>
+				<div class="queren">
+					<div class="yiyuedu"><input type="checkbox" id="input-yyd" checked>    <p>已阅读爱自驾条款，并同意</p></div>
+					<a href="page.html" target=_blank id="a-yyd">确认订单并提交</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div id="footer1">
+			<div id="footer1-box">
+				<ul>
+					<li id="footer1-1">人民交通出版社 </li>
+					<li id="footer1-2">爱自驾</li>
+					<li id="footer1-3">联系我们</li>
+					<li id="footer1-4">友情链接</li>
+					<li id="footer1-5">爱自驾品牌店</li>
+				</ul>
+			</div>
+		</div>
+		<div id="footer2">
+			<div id="footer2-box"> 
+				<p id="footer-p1">人民交通出版社股份有限公司</p>
+				<p id="footer-p2">京ICP备15018898号-1</p>
+			</div>
+		</div>
+	</div>
+	<script>
+		var val = $("#jian").val()
+		var nVar = Number(val)
+		$("#jian").click(function(){
+			nVar += 1; 
+			$("#num").val(nVar);
+			$(".pfj-num").text(nVar);
+			$(".tj-num").text(nVar);
+			var result1 = nVar * 5280 + 120;
+			$("#span-pz-right").text(result1);
+			var result2 = result1 + 170;
+			$(".tj-result").text(result2);
+		});
+		$("#jia").click(function(){
+			nVar -= 1;
+			if(nVar<0){
+				$("#num").val(0);
+				$(".pfj-num").val(0);
+				$(".tj-num").text(nVar);
+				$("#span-pz-right").text(120);
+				$(".tj-result").text(290);
+			}else{
+				$("#num").val(nVar);
+				$(".pfj-num").text(nVar);
+				$(".tj-num").text(nVar);
+				var result1 = nVar * 5280 + 120;
+				$("#span-pz-right").text(result1);
+				var result2 = result1 + 170;
+				$(".tj-result").text(result2);
+			}
+		});
+		$(".tx-no").click(function(){
+			$("#input-tt,#input-dz,#input-hy").attr("disabled","disabled")
+		});
+		$(".tx-yes").click(function(){
+			$("#input-tt,#input-dz,#input-hy").removeAttr("disabled")
+		});
+		var reg1= /^[\u4e00-\u9fa5]*$/g;
+		$(".tx-chinese").click(function(){
+			console.log("a")
+			$(this).val("");
+			$(this).mouseleave(function(){
+				var val=$(this).val();
+				var x=reg1.test(val);
+				if(x){console.log("正确")}else{
+					$(this).val("格式错误！");
+				}
+			});
+		});
+		var reg2= /^\d{11}$/;
+		$(".tx-tel").click(function(){
+			$(this).val("");
+			$(this).mouseleave(function(){
+				var val=$(this).val();
+				var x=reg2.test(val);
+				if(x){console.log("正确")}else{
+					$(this).val("格式错误！");
+				}
+			});
+		});
+		var reg3 = /^[0-9]{0,20}$/
+		$(".tx-num").click(function(){
+			$(this).val("");
+			$(this).mouseleave(function(){
+				var val=$(this).val();
+				var x=reg3.test(val);
+				if(x){console.log("正确")}else{
+					$(this).val("格式错误！");
+				}
+			});
+		});
+		var reg4 = /^[a-zA-Z0-9]{5,10}\@163\.com$/
+		$(".tx-yx").click(function(){
+			$(this).val("");
+			$(this).mouseleave(function(){
+				var val=$(this).val();
+				var x=reg4.test(val);
+				if(x){console.log("正确")}else{
+					$(this).val("格式错误！");
+				}
+			});
+		});
+		$(".box1").click(function(){
+			$(".box .change-city").toggleClass("add");
+		})
+		$(".box td").click(function(){
+			var val = $(this).text();
+			$(".box1 span").text(val);
+			$(".box .change-city.add").removeClass("add");
+		});
+		$(".xll-top a,fy-but a,#a-ykt,#a-ykb").click(function(){
+			return false;
+		})
+	</script>
+</body>
+</html>
