@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<title>晚上吃点啥？</title>
+</head>
+<body>
+	<input type="button" id="btn" class="btn btn-warning" value="晚上吃点啥？">
+	<input type="text" id="txt" value="">
+	<script src="js/fontsizeset.js"></script>
+	<script>
+		var nameList = ["披萨","卷饼","酸辣粉","麦当劳","炒饭","包子","泡面","肯德基","粥","吉野家","外卖小炒","面皮","米线","饺子","撸串"];
+		var btn = document.getElementById('btn');
+		var txt = document.getElementById('txt');
+		var n = 0;
+		function getName() {
+			var num = Math.floor(Math.random() * nameList.length);
+			if (nameList[num] != null) {
+				txt.value=nameList[num];
+				nameList[num] = null;
+			} else {
+				getName();
+			}
+		}
+		btn.onclick = function () {
+			if (n<15) {
+				getName();
+				n++;
+				btn.value='不行，换一个';
+			} else {
+				txt.value='这么挑你还是别吃了';
+			}
+		}
+	</script>
+</body>
+</html>
