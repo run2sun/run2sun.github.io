@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/mobile.css">
+	<link rel="stylesheet" href="css/swiper.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<title>Document</title>
+</head>
+<body>
+	<div id="LoadingBar"><img src="images/big.gif"></div>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide one">
+		    	<img class="ani" swiper-animate-effect="slideInRight" swiper-animate-duration=".5s" src="images/1-1.png">
+		    	<div class="round ani" swiper-animate-effect="fadeIn" swiper-animate-duration=".2s" swiper-animate-delay="3s"></div>
+		    	<div class="circle ani" swiper-animate-effect="change" swiper-animate-duration="1.5s" swiper-animate-delay="3.5s"></div>
+				<p class="name ani" swiper-animate-effect="bounceIn" swiper-animate-duration=".5s" swiper-animate-delay="1s">孙佳俐</p>
+				<p class="opi option-1 ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="1.5s">爱前端</p>
+				<p class="opi option-2 ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="1.55s">爱设计</p>
+				<p class="opi option-3 ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="1.6s">爱生活</p>
+			</div>
+			<div class="swiper-slide two">
+		    	<p class="ani" swiper-animate-effect="bounceIn" swiper-animate-duration=".5s" swiper-animate-delay=".5s">
+		    		HTML5&CSS3
+		    	</p>
+			</div>
+			<div class="swiper-slide three">
+				test words
+			</div>
+			<div class="swiper-slide four">
+				test words
+			</div>
+			<div class="swiper-slide five">
+				test words
+				<div id="btn"></div>
+			</div>
+		</div>
+	</div>
+	<script src="js/fontsizeset.js"></script>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/zepto-touch.js"></script>
+	<script src="js/swiper.animate1.0.2.min.js"></script>
+	<script src="js/swiper.js"></script>
+	<script>
+		function initPage(){
+		    var objLoading = document.getElementById("LoadingBar");
+		    if (objLoading != null)
+		    {
+		        objLoading.style.display = "none";
+		    }
+		}
+		window.onload = initPage();
+
+		var mySwiper = new Swiper('.swiper-container', {
+			onInit: function(swiper){
+				swiperAnimateCache(swiper); //隐藏动画元素
+				swiperAnimate(swiper); //初始化完成开始动画
+			},
+	  		onSlideChangeEnd: function(swiper){
+	  			swiperAnimate(swiper);
+    		},
+			direction : 'vertical',
+			// allowSwipeToPrev : false,
+		})
+		$('#btn').click(function(){
+			mySwiper.slideTo(0, 1000, false);//切换到第一个slide，速度为1秒
+		})
+
+	</script>
+</body>
+</html>

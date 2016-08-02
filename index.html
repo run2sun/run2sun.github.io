@@ -2,60 +2,17 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/index.css">
 	<title>Document</title>
 </head>
 <body>
-	<div class='stars'></div>
-	<div class='stars2'></div>
-	<div class="nav">
-		<ul>
-			<li><a href="home.html"><img src="images/nav-home.png"></a></li>
-			<li><a href="work.html"><img src="images/nav-url.png"></a></li>
-			<li><a href="stars.html"><img src="images/nav-stars.png"></a></li>
-			<li><a href="paint.html"><img src="images/nav-paint.png"></a></li>
-		</ul>
-	</div>
-	<img class="nav-btn" src="images/nav-icon.png">
-	<div class="content">
-		<div id="loading">Loading...</div>
-		<h1>run2sun.cn</h1>
-		<h2>Sunn's Personal Website</h2>
-		<p>RESUME：
-			<a href="http://run2sun.cn/resume"><img src="images/resume-pc.png" style="width: 36px;height: 36px;"></a>
-			<a href=""><img src="images/resume-mobile.png" style="width: 28px;height: 28px;"></a>
-		</p>
-	</div>
-	<script src="js/jquery-1.11.1.js"></script>
-	<script src="js/jquery-easing.js"></script>
+	<script src="js/checkUserAgent.js"></script>
 	<script>
-		$(document).ready(function(){
-			$('#loading').delay(1000).fadeOut(500);
-			$('.content h1').delay(2000).animate({
-				opacity: 1,
-				top: 0
-			},1000,'easeInOutCubic');
-			$('.content h2').delay(2500).animate({
-				opacity: 1,
-				top: 150
-			},1000,'easeInOutCubic');
-			$('.content p').delay(5000).animate({
-				opacity: 1
-			},1000);
-		})
-		$('.nav-btn').click(function(){
-			$('.nav').addClass('trans');
-			$('.nav-btn').animate({
-				opacity:0
-			},400);
-		});
-		$('.nav').mouseleave(function(){
-			$(this).removeClass('trans');
-			$('.nav-btn').animate({
-				opacity:.6
-			},800);
-		})
+
+		if(browser.versions.mobile){
+			location.href = "mobile.html";
+		}else{
+			location.href = "pc.html";
+		}
 	</script>
 </body>
 </html>

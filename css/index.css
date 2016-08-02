@@ -1,6 +1,6 @@
-.cf:before, .cf:after { 
-  content: " "; 
-  display: table; 
+.cf:before, .cf:after {
+  content: " ";
+  display: table;
 }
 .cf:after {
     clear: both;
@@ -21,8 +21,15 @@ h1,h2,h3,h4,h5,h6,p,a,span,ul li,i,b {
 html,body {
   height: 100%;
   width: 100%;
-  position: fixed;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.star {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
 }
 .stars {
   width: 1px;
@@ -34,7 +41,7 @@ html,body {
 .stars:after {
   content: " ";
   position: absolute;
-  top: 2000px;
+  top: 100vh;
   width: 1px;
   height: 1px;
   background: transparent;
@@ -50,7 +57,7 @@ html,body {
 .stars2:after {
   content: " ";
   position: absolute;
-  top: 2000px;
+  top: 100vh;
   width: 2px;
   height: 2px;
   background: transparent;
@@ -78,8 +85,8 @@ html,body {
   transform:translateX(100%);
 }
 .nav-btn {
-  position: relative;
-  right: -20px;
+  position: fixed;
+  left: 20px;
   top: 0;
   width: 80px;
   height: 80px;
@@ -88,6 +95,8 @@ html,body {
   z-index: 5;
   opacity:.6;
   cursor: pointer;
+  display: block;
+  float: left;
 }
 .nav ul {
   height: 100%;
@@ -119,7 +128,7 @@ html,body {
   height: 100px;
   position: absolute;
   left: 42vw;
-  top: 120px;
+  top: 40vh;
   font-size: 48px;
   font-family: MicroSoft YaHei;
   font-weight: lighter;
@@ -130,21 +139,21 @@ html,body {
 .content h1 {
   position: absolute;
   left: 28vw;
-  top: 50px;
+  top: 28vh;
   font-size: 120px;
   opacity: 0;
 }
 .content h2 {
   position: absolute;
   left: 36vw;
-  top: 200px;
+  top: 45vh;
   font-size: 36px;
   opacity: 0;
 }
 .content p {
   position: absolute;
   left: 40vw;
-  top: 400px;
+  top: 80vh;
   font-size: 20px;
   opacity: 0;
   display: flex;
@@ -160,8 +169,36 @@ html,body {
   border-right: 1px solid rgba(255, 255, 255, .3);
 }
 .content p a:hover {
-  background: radial-gradient(ellipse at center, rgba(255,255,255,.1) 0%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(to left, rgba(255,255,255,.1) 0%, rgba(255,255,255,0) 100%);
 }
 .content p a:last-child {
   border-right: none;
+}
+section {
+  height: 100%;
+  width: 100%;
+}
+.work {
+  background-color: rgba(255,255,255,.1);
+  width: 70vw;
+  margin: 0 auto;
+  padding: 1vw 0;
+}
+.row {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+
+}
+.page {
+  float: left;
+  margin: 1vw;
+  width: 32vw;
+  height: 18vw;
+  background-color: #fff;
 }
